@@ -1,0 +1,64 @@
+<!--
+********************************
+Filename: index.html
+Author: @erikaPerley
+Description: HTML
+Date: November 6, 2018
+*********************************
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>AJAX Lotto</title>
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+	<div id="home" class="page active">
+		<header>
+			<h1>Lottery Number Generator</h1>
+		</header>
+		<img src="img/luckyballs%20copy.jpeg" alt="lucky lotto balls">
+		<section class="main">
+			<p class="formBox">
+				<label for="digits">Number of Digits</label>
+				<input id="digits" type="number" max="10" min="1" placeholder="6" />
+			</p>
+			<p class="formBox">
+				<label for="max">Range</label>
+				<span>1 to </span><input id="max" type="number" min="2" max="99" placeholder="49" />
+			</p>
+			<p class="formBox buttons">
+				<button id="btnSend">Make Me Rich</button>
+			</p>
+		</section>
+		<footer>
+			<p>&copy;
+				<time datetime="2018">2018</time> Erika Perley</p>
+		</footer>
+	</div>
+	<div id="list" class="page">
+		<header>
+			<h1>Here Are Your Results!</h1>
+		</header>
+		<section class="main">
+			<p id="errorMessage"></p>
+			<ul class="num_list">
+				<!-- display the generated numbers from the server -->
+			</ul>
+			<p>
+				<button id="btnBack">I'm Feeling Lucky</button>
+			</p>
+		</section>
+		<footer>
+			<p>&copy;
+				<time datetime="2018">2018</time> Erika Perley</p>
+		</footer>
+	</div>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
